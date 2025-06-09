@@ -14,12 +14,13 @@ const ProductPlaceholder = () => {
                         <div className="placeholder col-12"></div>
                         <div className="placeholder col-4"></div>
                         <p className='lead'>
-                            <div className="placeholder col-12"></div>
-                            <div className="placeholder col-12"></div>
-                            <div className="placeholder col-12"></div>
-                            <div className="placeholder col-12"></div>
-                            <div className="placeholder col-12"></div>
                         </p>
+                        <div className="placeholder col-12"></div>
+                        <div className="placeholder col-12"></div>
+                        <div className="placeholder col-12"></div>
+                        <div className="placeholder col-12"></div>
+                        <div className="placeholder col-12"></div>
+
                     </div>
                 </div>
             </div>

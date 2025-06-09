@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import Header from './Header'
 import CardContainer from './CardContainer'
-import NavBar from '../ui/NavBar'
 import api from '../../api'
 import PlaceholderContainer from '../ui/PlaceholderContainer'
 import Error from '../ui/Error'
+import { randomValue } from '../../GenerateCartCode'
 
 const HomePage = () => {
 
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
+
+  // useEffect(function(){
+  //   if (localStorage.getItem('cart_code') === null) {
+  //     localStorage.setItem('cart_code', randomValue)
+  //   }
+  // }, [])
 
   useEffect(function () {
     setLoading(true)
@@ -26,9 +32,6 @@ const HomePage = () => {
         setError(err.message)
       })
   }, [])
-
-
-
 
 
   return (

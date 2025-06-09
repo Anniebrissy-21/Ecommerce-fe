@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const HomeCard = ({product}) => {
     return (
         <div className={`col-md-3 ${styles.col}`}>
-            <Link to="/detail" className={styles.link}>
+            <Link to={`/products/${product.slug}`} className={styles.link}>
                 <div className={styles.card}>
 
                     <div className={styles.cardImgWrapper}>
